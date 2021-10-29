@@ -66,7 +66,8 @@ Further research we suggest to include budgetary and resource restrictions that 
 
 ## For More Information
 
-See the full analysis: [Jupyter Notebook](./Final Notebook.ipynb), [Jupyter Notebook PDF](./Final Notebook.pdf) or review this [Presentation](./Phase_3_CHICAGO_CAR_CRASHES.pptx).
+See the full analysis: [Jupyter Notebook](./Final Notebook.ipynb), [Jupyter Notebook PDF](./Final Notebook.pdf) or review this 
+[Presentation](https://docs.google.com/presentation/d/1WZkj35Cn_xHzUtpLqt1yHE4x3BEcWc0jfyTcZTvkTf8/edit?usp=sharing).
 
 ## Repository Structure
 
