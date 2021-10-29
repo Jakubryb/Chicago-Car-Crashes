@@ -1,6 +1,6 @@
 # Phase-3
 
-![Chicago Car Crash Cover](./images/Chicago Car Crash Cover.PNG)
+![Chicago Car Crash Cover](./Images/Chicago Car Crash Cover.PNG)
 
 
 # Chicago Car Crashes
