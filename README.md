@@ -1,6 +1,6 @@
 # Phase-3
 
-![Chicago Car Crash Cover](./Images/Chicago Car Crash Cover.PNG)
+![Chicago Car Crash Cover](./Images/Chicago_Car_Crash_Cover.PNG)
 
 
 # Chicago Car Crashes
@@ -33,65 +33,11 @@ The data was downloaded on Friday, October 22. Attempts to reproduce this notebo
 
 These datasets are include very recent data and information from 2013 to present. The number of variables and columns in this dataset made it challenging to clean and use, however the broad scope of the data makes it a good candidate for exploring the business problem at hand.
 
-The large size of the original datasets were too large to upload to github, we create a cleaned and merged dataset saved as clean_data.csv.
-
 ## Data Preperation
 
-For data preparation, we formatted many columns. We later decided we didn't need to use many of them.
+For data preparation, we formatted many columns. We later decided we didn't need to use many of them. We filled in missing data with appropriate values which is further discussed in the notebook.
 
-### Dropping Unneccessary Columns
-
-#### Crash_df dropping Justification:
-
-RD_NO - Police Dep. Report number, another identifying number associated with each record, we kept CRASH_RECORD_ID as the joining record number for each dataframe.
-CRASH_DATE_EST_I - used when crash is reported to police days after the crash, this dataframe inclues crash day of week, hour and month so we can drop the specific date.
-CRASH_DATE - this dataframe inclues crash day of week, hour and month so we can drop the specific date.
-REPORT_TYPE - administrative report type, not a factor relevant to causing a crash.
-HIT_AND_RUN_I - not a factor relevant to causing a crash.
-DATE_POLICE_NOTIFIED - not a factor relevant to causing a crash.
-BEAT_OF_OCCURENCE - not a factor relevant to causing a crash.
-PHOTOS_TAKEN_I - not a factor relevant to causing a crash.
-STATEMENTS_TAKEN - not a factor relevant to causing a crash.
-LANE_COUNT - Dropping lane count because we found too many null values that we don't want to skew data with mean/median, and don't want to assume a distribution for synthetic data
-Basing our severity of injury off of information from the people_df dataframe, including this and other injury related columns would cause multicolliniarity in our modeling.
-
-Location related info we dropped - not enough time for the scope of this project
-
-LONGITUDE
-LATITUDE
-STREET_NO
-
-#### people_df dropping justification:
-
-PERSON_ID - unique ID for each person record, will use CRASH_RECORD_ID
-RD_NO - Police Dep. Report number, another identifying number associated with each record, we kept CRASH_RECORD_ID as the joining record number for each dataframe.
-VEHICLE_ID - another indentifying factor we don't need
-CRASH_DATE - time records coming from crash.csv dataset
-SEAT_NO - too small representation .09% of dataset
-
-Location info not looked into:
-
-CITY
-STATE
-ZIPCODE
-SEX - not relevant to causing a crash
-DRIVER_LICENCE_STATE - not a factor relevant
-DRIVER_LICENCE_CLASS - not a factor relevant
-SAFETY_EQUIPMENT - included safety equipment worn by pedestrians, cyclists, etc. would have been too time consuming to wade through.
-AIRBAG_DEPLOYED- not a factor relevant
-EJECTION not a factor relevant
-
-Hospital and EMS info not relevant to learning about causes of crash:
-
-HOSPITAL
-EMS_AGENCY
-EMS_RUN_NO
-DRIVER_VISION - 40% of data is unknown vision. Hard to make assumptions fairly
-PHYSICAL_CONDITION - condition of the driver after the accident does not play a role in causation
-PEDPEDAL_ACTION - action of a pedestrian varies between instances. Holds no info that city could change
-PEDPEDAL_VISIBILITY - clothing of the pedestrian holds no info that city could enforce
-PEDPEDAL_LOCATION - location of the pedestrian at time of crash holds no info that city could enforce
-CELL_PHONE_USE - not enough data to utlize
+The size of the original datasets were too large to upload to github, we create a cleaned and merged dataset saved as clean_data.csv.
 
 ## Modeling
 
