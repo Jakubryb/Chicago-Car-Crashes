@@ -66,8 +66,9 @@ Further research we suggest to include budgetary and resource restrictions that 
 
 ## For More Information
 
-See the full analysis: [Jupyter Notebook](./Final Notebook.ipynb), [Jupyter Notebook PDF](./Final Notebook.pdf) or review this 
-[Presentation](https://docs.google.com/presentation/d/1WZkj35Cn_xHzUtpLqt1yHE4x3BEcWc0jfyTcZTvkTf8/edit?usp=sharing).
+See the full analysis: [Jupyter Notebook](https://github.com/Jakubryb/Phase-3/blob/main/Final%20Notebook.ipynb), 
+[Jupyter Notebook PDF](https://github.com/Jakubryb/Phase-3/blob/main/Final%20Notebook.pdf) 
+or review this [Presentation](https://docs.google.com/presentation/d/1WZkj35Cn_xHzUtpLqt1yHE4x3BEcWc0jfyTcZTvkTf8/edit?usp=sharing).
 
 ## Repository Structure
 
